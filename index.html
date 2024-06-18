@@ -5,33 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="home-style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
         <nav>
-            <button>Get in touch</button>
-            <a href="">Home</a>
-            <a href="">About me</a>
-            <a href="">Projects</a>
+            <button class="getintouch">Get in touch</button>
+            <a class="nav-link" href="">Home</a>
+            <a class="nav-link" href="">About me</a>
+            <a class="nav-link" href="">Projects</a>
         </nav>
-        <div class="circle1"></div>
-        <div class="circle2"></div>
-        <div>
-            <img src="Images/lucky-man.jpg" alt="profile-pic" id="hero-pic">
-            <h1>It's me Bobby<br>and I like <span>Coding</span></h1>
+
+        <div class="background">
+            <div class="circle2"></div>
+            <div class="circle1"></div>
+        </div>
+        
+        <div class="image-text">
+            <div class="mid">
+                <div class="words">
+                    <h1>It's me Bobby</h1>
+                    <div class="spans">
+                        <h1>and I like</h1>
+                        <div class="word-changing">
+                            <span id="word">Coding</span>
+                            <span id="word">Video Editing</span>
+                            <span id="word">Animation</span>
+                            <span id="word">Creating</span>
+                            <span id="word">Coding</span>
+                        </div>
+                    </div>
+                </div> 
         </div>
 
     </header>
     <section class="about-me">
+        <img src="Images/handsome-man-making-ok-sign(1).jpg" alt="me" id="pic">
+        <svg width="713" height="700" viewBox="0 0 713 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M685.982 129.265C738.24 207.278 698.504 307.689 686.482 401.35C673.57 501.946 702.305 633.299 614.584 685.508C526.754 737.782 430.302 633.438 330.834 613.02C240.433 594.464 132.758 637.582 67.3384 573.177C-3.14768 503.784 -7.82824 392.222 6.60025 293.814C21.411 192.799 60.0083 88.6337 146.51 33.1931C230.142 -20.4079 334.686 3.94551 431.869 21.2524C526.317 38.072 632.906 50.0303 685.982 129.265Z" fill="#002A0E"/>
+        </svg>
         
+        <h2>Creating is my way of expressing</h2>
+        <p>I remember the first time I was shown Photoshop. My dad changes mine and my cousin’s face right in front of my eyes and I could not believe it. Ever since then I wanted to create things that would bring the same feeling into people. I have learned a lot of software along the way that will allow me to bring my wildest dreams into life.</p>
+        <div>Moving skills</div>
     </section>
 
     <section class="my-work">
-
+        <h1>Here is what I have <span>created</span>
+            so far</h1>
+        
+        <div>
+            <div>
+                <button>Portfolio Example 1</button>
+                <button>Portfolio Example 2</button>
+                <button>Portfolio Example 3</button>
+                <button>Portfolio Example 4</button>
+            </div>
+            <div>
+                Example
+            </div>
+        </div>
     </section>
 
     <section class="contact-form">
-
+        <div class="contact-section">
+            <input type="text" name="" id="">
+            <input type="text" name="" id="">
+            <button></button>
+        </div>
+        <img src="Images/handsome-man-with-thumb-up.jpg" alt="me" id="pic">
     </section>
     <footer>
 
