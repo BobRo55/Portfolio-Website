@@ -266,13 +266,19 @@ nav{
 
 .logos{
     overflow: hidden;
+    
 }
 
 .logo-slide{
     white-space: nowrap;
+    display: flex;
+    gap: 5rem;
+    padding-block: 2rem 5rem;
+    -webkit-mask: linear-gradient(-90deg, transparent, white , white, white, transparent);
+    mask-image: linear-gradient (white, transparent);
 }
 
 .logo-slide img{
     height: 7rem;
-    padding:0rem 3rem 5rem 3rem;
+    
 }
