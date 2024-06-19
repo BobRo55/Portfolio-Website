@@ -209,8 +209,7 @@ nav{
 /* About Me */
 .about-me{
     margin: 0;
-    padding-top: 10rem;
-    
+    padding: 10rem 2rem 10rem 2rem;
     background-color: hsl(139, 100%, 94%);
     display: flex;
     flex-flow: column nowrap;
@@ -264,21 +263,89 @@ nav{
     height: 50rem;
 }
 
-.logos{
+.wrapper {
+    width: 90%;
+    max-width: 1536px;
+    margin-inline: auto;
+    position: relative;
+    height: 8rem;
+    margin-top: 5rem;
     overflow: hidden;
-    
-}
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0)
+    );
+  }
+  
+  @keyframes scrollLeft {
+    to {
+      left: -200px;
+    }
+  }
+  
+  .item img{
+    width: 200px;
+    height: 100px;
+    padding-bottom: 6rem;
+    position: absolute;
+    left: max(calc(200px * 6), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  .item1 img{
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
+  }
+  
+  .item2 img{
+    animation-delay: calc(30s / 8 * (8 - 2) * -1);
+  }
+  
+  .item3 img{
+    animation-delay: calc(30s / 8 * (8 - 3) * -1);
+  }
+  
+  .item4 img{
+    animation-delay: calc(30s / 8 * (8 - 4) * -1);
+  }
+  
+  .item5 img{
+    animation-delay: calc(30s / 8 * (8 - 5) * -1);
+  }
+  
+  .item6 img{
+    animation-delay: calc(30s / 8 * (8 - 6) * -1);
+  }
 
-.logo-slide{
-    white-space: nowrap;
+  .item7 img{
+    animation-delay: calc(30s / 8 * (8 - 7) * -1);
+  }
+
+  .item8 img{
+    animation-delay: calc(30s / 8 * (8 - 8) * -1);
+  }
+
+  /* Projects */
+
+  .my-work h1{
+   
+    text-align: center;
+    
+  }
+
+  .example-section{
     display: flex;
-    gap: 5rem;
-    padding-block: 2rem 5rem;
-    -webkit-mask: linear-gradient(-90deg, transparent, white , white, white, transparent);
-    mask-image: linear-gradient (white, transparent);
-}
+    justify-content: center;
+  }
 
-.logo-slide img{
-    height: 7rem;
-    
-}
+  .example-buttons{
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  
