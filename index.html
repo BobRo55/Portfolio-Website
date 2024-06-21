@@ -14,16 +14,13 @@
 <body>
     <header>
         <nav>
-            <button class="getintouch">Get in touch</button>
-            <a class="nav-link" href="">Home</a>
-            <a class="nav-link" href="">About me</a>
-            <a class="nav-link" href="">Projects</a>
+            <button class="getintouch" onclick="scrollToSection('contact-form')">Get in touch</button>
+            <a class="nav-link" href="#" onclick="scrollToSection('home')">Home</a>
+            <a class="nav-link" href="#" onclick="scrollToSection('about-me')">About me</a>
+            <a class="nav-link" href="#" onclick="scrollToSection('my-work')">Projects</a>
         </nav>
 
-        <div class="background">
-            <div class="circle2"></div>
-            <div class="circle1"></div>
-        </div>
+     
         
         <div class="image-text">
             <div class="mid">
@@ -42,9 +39,8 @@
                 </div> 
         </div>
 
-       
     </header>
-    <section class="about-me">
+    <section id="about-me" class="about-me">
         <div class="imagetext">
             <img src="Images/handsome-man-making-ok-sign(1).png" alt="me" id="pic-about">
         
@@ -79,33 +75,47 @@
         
     </section>
 
-    <section class="my-work">
-        <h1>Here is what I have <span> created</span>
-            so far</h1>
+    <section id="my-work" class="my-work">
+        <h1>Here is what I have <span id="created"> created</span></h1>
         
         <div class="example-section">
-            <div class="example-buttons">
-                <button>Portfolio Example 1</button>
-                <button>Portfolio Example 2</button>
-                <button>Portfolio Example 3</button>
-                <button>Portfolio Example 4</button>
-            </div>
+            <ul class="list-items">
+                <li class="list-item active" data-target="img1">Local Team</li>
+                <li class="list-item" data-target="img2">Company Home Page</li>
+                <li class="list-item" data-target="img3">Portfolio Example 3</li>
+                <li class="list-item" data-target="img4">Portfolio Example 4</li>
+            </ul>
             <div class="example-photo">
-                Example
+                <a href="https://bobro55.github.io/local_team/"><img id="img1" class="example-image active" src="Images/Website Example 1.jpeg" alt="Portfolio Example 1"></a>
+                <img id="img2" class="example-image" src="Images/Website Example 2.jpeg" alt="Portfolio Example 2" style="display:none;">
+                <img id="img3" class="example-image" src="Images/Website Example 3.jpeg" alt="Portfolio Example 3" style="display:none;">
+                <img id="img4" class="example-image" src="Images/Website Example 4.jpeg" alt="Portfolio Example 4" style="display:none;">
             </div>
         </div>
     </section>
 
-    <section class="contact-form">
+    <section id="contact-form" class="contact-form">
         <div class="contact-section">
-            <input type="text" name="" id="">
-            <input type="text" name="" id="">
-            <button></button>
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
         </div>
-        <img src="Images/handsome-man-with-thumb-up.jpg" alt="me" id="pic">
+       
     </section>
     <footer>
-
+        <p>&copy; 2023 Bobby's Portfolio. All rights reserved.</p>
     </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+    <script src="examples.js"></script>
 </body>
 </html>
